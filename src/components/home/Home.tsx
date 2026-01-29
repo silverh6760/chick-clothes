@@ -1,7 +1,7 @@
-import React from "react";
+import CommentSection from "./comment-section/comment-section";
 
 function Home() {
-  return <div>Hi</div>;
+	return <CommentSection />;
 }
 
 export default Home;
