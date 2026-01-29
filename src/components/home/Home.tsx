@@ -1,7 +1,13 @@
-import React from "react";
+import CategorySection from "./category-section";
+import ProductsSection from "./products-section";
 
 function Home() {
-  return <div>Hi</div>;
+	return (
+		<>
+			<ProductsSection />
+			<CategorySection />
+		</>
+	);
 }
 
 export default Home;
