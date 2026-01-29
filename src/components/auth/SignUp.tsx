@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { NavLink } from "react-router-dom";
 import type { Inputs } from "../../types/types";
 import SubmitButton from "../shared/SubmitButton";
 
@@ -84,7 +85,13 @@ function SignUp() {
 					<SubmitButton>ثبت نام</SubmitButton>
 				</form>
 				<div className="text-[#6c514caa] text-center text-md">
-					قبلا ثبت نام کردید ؟ ورود
+					قبلا ثبت نام کردید ؟{" "}
+					<NavLink
+						className={"text-[#6c514c] underline hover:text-[#53a98c]"}
+						to={"/login"}
+					>
+						ورود
+					</NavLink>
 				</div>
 			</div>
 			<div></div>
