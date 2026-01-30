@@ -1,27 +1,32 @@
-export interface Product {
+interface Product {
 	id: number;
 	price: number;
+	name: string;
 	imageUrl: string;
 }
 const products: Product[] = [
 	{
 		id: 1,
 		price: 320000,
+		name: "پیراهن صورتی",
 		imageUrl: "../../src/assets/images/p1.png",
 	},
 	{
 		id: 2,
 		price: 280000,
+		name: "پیراهن بهاری",
 		imageUrl: "../../src/assets/images/p2.png",
 	},
 	{
 		id: 3,
 		price: 180000,
+		name: "پیراهن گل گلی",
 		imageUrl: "../../src/assets/images/p3.png",
 	},
 	{
 		id: 4,
 		price: 150000,
+		name: "کت لی",
 		imageUrl: "../../src/assets/images/p4.png",
 	},
 ];
@@ -37,6 +42,7 @@ export default function ProductsSection() {
 						className="w-full shadow rounded-lg pb-4 flex flex-col items-center gap-8"
 					>
 						<img className="w-full h-64  rounded-t-lg" src={item.imageUrl} />
+						<p className="font-extrabold text-xl">{item.name}</p>
 						<span className="font-bold text-[#000000c2]">
 							تومان {item.price}{" "}
 						</span>
