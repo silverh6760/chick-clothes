@@ -1,5 +1,4 @@
-import LogInPage from "../pages/auth/LogIn";
-import SignUpPage from "../pages/auth/SignUp";
+import Auth from "../pages/auth/auth";
 import CartPage from "../pages/cart/CartPage";
 import HomePage from "../pages/home/HomePage";
 import NotFoundPage from "../pages/not-found/NotFoundPage";
@@ -12,8 +11,7 @@ export const ROUTES = {
 	SingleProduct: "/products/:id",
 	Cart: "/cart",
 	NotFound: "*",
-	SignUp: "/signup",
-	LogIn: "/login",
+	Auth: "/auth",
 };
 
 export const routesArray = [
@@ -22,6 +20,5 @@ export const routesArray = [
 	{ path: ROUTES.SingleProduct, element: <SingleProductPage /> },
 	{ path: ROUTES.Cart, element: <CartPage /> },
 	{ path: ROUTES.NotFound, element: <NotFoundPage /> },
-	{ path: ROUTES.SignUp, element: <SignUpPage /> },
-	{ path: ROUTES.LogIn, element: <LogInPage /> },
+	{ path: ROUTES.Auth, element: <Auth /> },
 ];
