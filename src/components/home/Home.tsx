@@ -1,13 +1,15 @@
 import CategorySection from "./category-section";
+import Hero from "./Hero";
 import ProductsSection from "./products-section";
 
 function Home() {
-	return (
-		<>
-			<ProductsSection />
-			<CategorySection />
-		</>
-	);
+  return (
+    <>
+      <Hero />
+      <ProductsSection />
+      <CategorySection />
+    </>
+  );
 }
 
 export default Home;
