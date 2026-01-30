@@ -15,7 +15,7 @@ function LogIn() {
 	};
 
 	return (
-		<div className="flex flex-col justify-center items-center gap-2 bg-[#fdf5f3]">
+		<div className="h-screen flex flex-col justify-center items-center gap-2 bg-[#fdf5f3] pt-10">
 			<h1 className="text-[#c99a87] text-xl font-bold">فروشگاه شیک</h1>
 			<h2 className="text-[#6c514c] text-xl font-bold">ورود به حساب</h2>
 			<p className="text-[#6c514c] text-sm">
@@ -49,7 +49,7 @@ function LogIn() {
 							validate: (value) => {
 								return (
 									[/[a-z]/, /[A-Z]/, /[0-9]/].every((pattern) =>
-										pattern.test(value)
+										pattern.test(value),
 									) || "cannot special chars, only lower, upper, number"
 								);
 							},
